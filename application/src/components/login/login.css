@@ -1,0 +1,21 @@
+.login-form {
+	position: relative;
+	margin-top: 70px;
+	height: 300px;
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	font-family: sans-serif;
+	background-color: #1f1f1f;
+}
+
+.signupButton {
+	text-decoration-line: underline;
+	text-decoration-color: #00ffbc;
+}
+
+.signupButton:hover {
+	color:#00ffbc;
+}

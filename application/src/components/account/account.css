@@ -1,0 +1,531 @@
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+
+}
+
+body {
+	margin: 0;
+	padding:0;
+	position: relative;
+	overflow: hidden;
+}
+
+.body {
+	height: 100vh;
+	width: 100%;
+}
+
+.header {
+	height: 8vh;
+	width: 100%;
+	background-color: #161616;
+	border-bottom: 1px solid #161616;
+	box-shadow: 2px 0 5px rgba(0, 0, 0, .3);
+}
+
+.header h1 {
+	color: transparent;
+	width: 150px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	font-size: 24px;
+	position: absolute;
+	left: 15%;
+	top: 4vh;
+	background: linear-gradient(to right, blue, violet);
+	background-clip: text;
+	transform: translate(-50%, -50%);
+}
+
+.burger {
+	height: 40px;
+	width: 50px;
+	position: relative;
+	top: 1vh;
+	left: 8%;
+	cursor: pointer;
+	padding: 6px 0;
+	z-index: 10;
+}
+
+.burger1, .burger2, .burger3 {
+	background-color: #00ffbc;
+	height: 3px;
+	width: 25px;
+	margin: 5px;
+	pointer-events: none;
+	transition: all .3s ease;
+}
+
+.profileimg {
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	align-self: center;
+	cursor:default;
+	border: 2px solid #161616;
+	padding: 0;
+	object-fit: cover;
+	object-position: center;
+}
+
+.settings-menu {
+	position: absolute;
+	background-color: #161616;
+	height: 93vh;
+	width: 400px;
+	left: 0;
+	top: 8vh;
+	text-align: center;
+	padding-top: 20px;
+	z-index: 50;
+	transition: .3s ease-in-out;
+	transform: translateX(-100%);
+	box-shadow: 5px 0 10px rgba(0, 0, 0, .3);
+}
+
+.settings-menu h1 {
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	position: relative;
+	top: 40px;
+}
+
+.settings-buttons {
+	width: 100%;
+	height: 50%;
+	position: relative;
+	top: 15vh;
+}
+
+.buttons {
+	position: relative;
+	top: 20px;
+}
+
+.settings-menu button {
+	width:90%;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+
+.settings-menu label {
+	position: relative;
+	cursor: pointer;
+	padding: 15px 106px;
+	border: 1px solid transparent;
+	background-color: black;
+	color: white;
+	border-radius: 12px;
+}
+
+.settings-menu label input {
+	width: 100%;
+	height: 30px;
+	background-color: #0C0D0D;
+}
+
+.settings-menu label:hover {
+	border: 1px solid #00ffbc;
+	color: #00ffbc;
+}
+
+.settings-menu button:hover {
+	border: 1px solid #00ffbc;
+}
+
+.logout-delete {
+	display: flex;
+	position: relative;
+	top: 30px;
+}
+
+.changeusername-background {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	background: rgba(0, 0, 0, .6);
+	top: 0;
+	z-index:55;
+	display: none;
+}
+
+.changeusername {
+	position: absolute;
+	height: 200px;
+	width: 400px;
+	background-color: #1f1f1f;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50% ,-100%);
+	box-shadow: 0 0 20px 5px rgba(0, 0, 0, .5);
+	padding: 10px;
+	border-radius: 12px;
+	text-align: center;
+}
+
+.changepassword-background {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	background: rgba(0, 0, 0, .6);
+	top: 0;
+	z-index:55;
+	display: none;
+}
+
+.changepassword {
+	position: absolute;
+	height: 200px;
+	width: 400px;
+	background-color: #1f1f1f;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50% ,-100%);
+	box-shadow: 0 0 20px 5px rgba(0, 0, 0, .5);
+	padding: 10px;
+	border-radius: 12px;
+	text-align: center;
+	opacity: 1;
+}
+
+.changeusername label {
+	position: relative;
+	top: 30%;
+	margin-top: 10px;
+}
+
+.changeusername input {
+	position: relative;
+	top: 30%;
+	border-radius: 12px;
+	outline: none;
+	border: 2px solid transparent;
+	padding-left: 10px;
+	width: 50%;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.changeusername input:focus {
+	border: 2px solid #00ffbc;
+}
+
+.changepassword label {
+	position: relative;
+	top: 30%;
+	margin-top: 10px;
+}
+
+.changepassword input {
+	position: relative;
+	top: 30%;
+	border-radius: 12px;
+	outline: none;
+	border: 2px solid transparent;
+	padding-left: 10px;
+	width: 50%;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.changepassword input:focus {
+	border: 2px solid #00ffbc;
+}
+
+.usernameResponse {
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+}
+
+.passwordResponse {
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 20%;
+}
+
+
+.close-change-username {
+	background-color: transparent;
+	width: 30px;
+	height: 30px;
+	border-radius: 10px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 0;
+}
+
+.close-change-username i {
+	pointer-events: none;
+}
+
+.close-change-password {
+	background-color: transparent;
+	width: 30px;
+	height: 30px;
+	border-radius: 10px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 0;
+}
+
+.close-change-password i {
+	pointer-events: none;
+}
+
+.close-change-username:hover {
+	border: 2px solid #00ffbc;
+}
+
+.close-change-password:hover {
+	border: 2px solid #00ffbc;
+}
+
+.confirm {
+	position: absolute;
+	bottom: 0;
+	left: 30%;
+	border: 2px solid transparent;
+}
+
+.confirm:hover {
+	border: 2px solid #00ffbc;
+}
+
+.search-bar-container {
+	width: 100%;
+	height: 42px;
+	position: relative;
+	top: 200px;
+	transition: transform .5s ease-in-out
+}
+
+.search-bar {
+	position: relative;
+	height: 100%;
+	width: 50%;
+	border: 2px solid white;
+	border-radius: 25px;
+	text-align: center;
+	margin: 0 auto;
+	transition: transform .5s ease-in-out;
+	z-index: 3;
+}
+
+.search-bar input {
+	width: 92%;
+	background: none;
+	border: none;
+	border-radius: 15px 0 0 15px;
+	outline: none;
+	padding: 0;
+	color: white;
+	line-height: 30px;
+	padding-left: 25px; 
+	font-size: 16px;
+	margin:0;
+	position: relative;
+	top: 2px;
+}
+
+.results {
+	position: relative;
+	height: 70vh;
+	width: 60%;
+	margin: 0 auto;
+	top: 110px;
+	display: none;
+	border-radius: 15px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
+	overflow: hidden;
+	background-color: #161616;
+}
+
+.close-results {
+	position: relative;
+	background:none;
+	border:none;
+	height: 4%;
+	width: 4%;
+	margin: 5px;
+	padding: 0;
+	float: right;
+	z-index: 3;
+}
+
+.close-results:hover {
+	border:none;
+}
+
+.results-div {
+	position: relative;
+	top: 5%;
+	height: 95%;
+	width: 100%;
+	overflow: scroll;
+	padding: 10px;
+	background-color: #161616;
+}
+
+.result {
+	position: relative;
+	width: 100%;
+	height: 100px;
+	border-radius: 18px;
+	margin: 10px auto;
+	background-color: #1f1f1f;
+}
+
+.result img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: absolute;
+	top: 20px;
+	left: 15px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.result h1 {
+	position: absolute;
+	color: white;
+	font-size: 20px;
+	top: 34px;
+	left: 80px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.result button {
+	position: absolute;
+	float: right;
+	margin: 0;
+	right: 0;
+	top:0;
+	border-radius: 0 18px 0 18px;
+	border: 2px solid transparent;
+}
+
+.result button:hover {
+	border: 2px solid #00ffbc;
+}
+
+.navigation-div {
+	width: 100%;
+	position: absolute;
+	top: 1.5vh;
+}
+
+.navigation {
+	width:400px;
+	height: 40px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+
+.chatButton, .friendsButton, .searchButton{
+	width:30%;
+	height: 100%;
+	margin: 0;
+	border: none;
+	border-radius: 0;
+	background-color: transparent;
+}
+
+.chatButton:hover, .friendsButton:hover, .searchButton:hover {
+	border: none;
+}
+
+.searchButton {
+	color: #00ffbc;
+}
+
+.chats-window {
+	height: 85vh;
+	width: 100vw;
+	border-right: 1px solid #161616;
+	padding:0;
+	margin-left: 1px;
+	box-shadow: 2px 0 5px rgba(0, 0, 0, .3);
+	z-index: 10;
+	overflow: scroll;
+	display: flex;
+}
+
+.chats {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	padding: 30px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.chatItem-box {
+	width: 70vw;
+	height: 70px;
+	margin: 10px 0;
+	border-radius: 12px;
+	border: 1px solid #161616;
+	cursor: pointer;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	display: flex;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.chatItem-box img {
+	width: 45px;
+	height: 45px; 
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 5px;
+	pointer-events: none;
+}
+
+.chatItem-box h1 {
+	color: white;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	pointer-events: none;
+	position: absolute;
+	top: 25%;
+	left: 60px;
+}
+
+.chatItem-box p {
+	color: grey;
+	font-size: 12px;
+	font-family: 'Roboto', sans-serif;
+	pointer-events: none;
+	position: absolute;
+	top: 60%;
+	left: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,7 +1,7 @@
 {
   "name": "application",
   "version": "0.1.0",
-  "ipAdress": "192.168.0.120",
+  "ipAdress": "",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",

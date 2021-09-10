@@ -6,7 +6,7 @@ import Login from '../login/login';
 import Signup from '../signup/signup';
 import Account from '../account/account';
 
-export let ipAdress = '192.168.0.120';
+export let ipAddress = '192.168.0.120';
 
 const App = () => {
 	return (

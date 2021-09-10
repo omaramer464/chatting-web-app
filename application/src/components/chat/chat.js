@@ -1,12 +1,12 @@
 import React from 'react';
 import io from 'socket.io-client';
 import './chat.css';
-import {ipAdress} from '../../../package.json';
+import {ipAddress} from '../../../package.json';
 
-const getchat = `http://${ipAdress}:5000/chat/get`;
+const getchat = `http://${ipAddress}:5000/chat/get`;
 
 
-const endpoint = `${ipAdress}:5000`;
+const endpoint = `${ipAddress}:5000`;
 let socket;
 
 
@@ -96,10 +96,10 @@ class Chat extends React.Component {
 				});
 
 			} else {
-				window.location.href = `http://${ipAdress}:3000/account`;
+				window.location.href = `http://${ipAddress}:3000/account`;
 			}
 		} else {
-			window.location.href = `http://${ipAdress}:3000`;
+			window.location.href = `http://${ipAddress}:3000`;
 		}
 	}
 

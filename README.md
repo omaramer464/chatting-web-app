@@ -7,4 +7,6 @@ My objective in creating this project was to test myself in backend development,
 
 The application uses MySQL as a database. The database file is not included in the project. To create a database file, open terminal (for mac, cmd for windows), change directory to the server's directory, then use "node sql.js".
 
+Before running the application, got to package.json file in the application folder and put your private IP address in the ipAddress value.
+
 To run the application, open terminal (for mac, cmd for windows), change directory to the server's directory, then use "node server.js". Open another terminal terminal (for mac, cmd for windows) window, change directory to the application's directory, then use "npm start".

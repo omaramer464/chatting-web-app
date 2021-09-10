@@ -1,13 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import './signup.css';
-import {ipAdress} from '../../../package.json';
+import {ipAddress} from '../../../package.json';
 
-const usernameURL = `http://${ipAdress}:5000/check/username`;
-const emailURL = `http://${ipAdress}:5000/check/email`;
-const signupURL = `http://${ipAdress}:5000/signup`;
-const loginpageURL = `http://${ipAdress}:3000/`;
-const accountpage = `http://${ipAdress}:3000/account`;
+const usernameURL = `http://${ipAddress}:5000/check/username`;
+const emailURL = `http://${ipAddress}:5000/check/email`;
+const signupURL = `http://${ipAddress}:5000/signup`;
+const loginpageURL = `http://${ipAddress}:3000/`;
+const accountpage = `http://${ipAddress}:3000/account`;
 
 class Signup extends React.Component {
 	constructor(props) {

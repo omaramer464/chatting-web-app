@@ -1,13 +1,13 @@
 import React from 'react';
 import './friends.css';
-import {ipAdress} from '../../../package.json';
+import {ipAddress} from '../../../package.json';
 
-const getfriends = `http://${ipAdress}:5000/account/friends/get`;
-const removefriend = `http://${ipAdress}:5000/account/friends/remove`;
-const message = `http://${ipAdress}:5000/account/friends/message`;
-const getfriendRequests = `http://${ipAdress}:5000/account/friends/friendRequests`;
-const deny = `http://${ipAdress}:5000/account/friends/friendRequests/deny`;
-const accept = `http://${ipAdress}:5000/account/friends/friendRequests/accept`;
+const getfriends = `http://${ipAddress}:5000/account/friends/get`;
+const removefriend = `http://${ipAddress}:5000/account/friends/remove`;
+const message = `http://${ipAddress}:5000/account/friends/message`;
+const getfriendRequests = `http://${ipAddress}:5000/account/friends/friendRequests`;
+const deny = `http://${ipAddress}:5000/account/friends/friendRequests/deny`;
+const accept = `http://${ipAddress}:5000/account/friends/friendRequests/accept`;
 
 
 

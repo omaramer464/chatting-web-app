@@ -1,10 +1,10 @@
 import React from 'react';
 import './login.css';
 import {Link} from 'react-router-dom';
-import {ipAdress} from '../../../package.json'
+import {ipAddress} from '../../../package.json'
 
-const loginURL = `http://${ipAdress}:5000/login`;
-const accountpage = `http://${ipAdress}:3000/account`;
+const loginURL = `http://${ipAddress}:5000/login`;
+const accountpage = `http://${ipAddress}:3000/account`;
 
 class Login extends React.Component {
 	constructor(props) {

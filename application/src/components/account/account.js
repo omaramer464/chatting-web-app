@@ -2,20 +2,20 @@ import React from 'react';
 import './account.css';
 import Chat from '../chat/chat';
 import Friends from '../friends/friends';
-import {ipAdress} from '../../../package.json';
+import {ipAddress} from '../../../package.json';
 
-const loginpage = `http://${ipAdress}:3000`;
-const checkURL2 = `http://${ipAdress}:5000/account/get/refresh`;
-const deleteAccount = `http://${ipAdress}:5000/account/delete`;
-const changeimgURL = `http://${ipAdress}:5000/account/profileimg/change`;
-const loadimg = `http://${ipAdress}:5000/account/profileimg`;
-const removeimg = `http://${ipAdress}:5000/account/profileimg/remove`;
-const checkusername = `http://${ipAdress}:5000/account/change/username`;
-const checkpassword = `http://${ipAdress}:5000/account/change/password`;
-const searchURL = `http://${ipAdress}:5000/account/search`;
-const getchats = `http://${ipAdress}:5000/account/chats`;
-const sendRequest = `http://${ipAdress}:5000/account/friends/sendRequest`;
-const cancelRequest = `http://${ipAdress}:5000/account/friends/cancelRequest`;
+const loginpage = `http://${ipAddress}:3000`;
+const checkURL2 = `http://${ipAddress}:5000/account/get/refresh`;
+const deleteAccount = `http://${ipAddress}:5000/account/delete`;
+const changeimgURL = `http://${ipAddress}:5000/account/profileimg/change`;
+const loadimg = `http://${ipAddress}:5000/account/profileimg`;
+const removeimg = `http://${ipAddress}:5000/account/profileimg/remove`;
+const checkusername = `http://${ipAddress}:5000/account/change/username`;
+const checkpassword = `http://${ipAddress}:5000/account/change/password`;
+const searchURL = `http://${ipAddress}:5000/account/search`;
+const getchats = `http://${ipAddress}:5000/account/chats`;
+const sendRequest = `http://${ipAddress}:5000/account/friends/sendRequest`;
+const cancelRequest = `http://${ipAddress}:5000/account/friends/cancelRequest`;
 
 class Account extends React.Component {
 	constructor(props) {
